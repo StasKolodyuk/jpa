@@ -1,7 +1,9 @@
 package com.epam.jmp.repository;
 
+import com.epam.jmp.model.Project;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
 
-
-public interface ProjectRepository extends CrudRepository {
+@Repository
+public interface ProjectRepository extends CrudRepository<Project, Long> {
 }
